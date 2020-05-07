@@ -7,157 +7,159 @@ body {
     height: 100vh;
 }
 
-// /* movil */
+// // /* movil */
 
 .device {
     margin: 20px;
 
 }
 
-/* movil */
+// /* movil */
 
-.movil {
-    background-color: aliceblue;
-    width: 250px;
-    height: calc((250px * 0.83) + 250px);
-    border: 1px solid black;
+// .movil {
+//     background-color: aliceblue;
+//     width: 250px;
+//     height: calc((250px * 0.83) + 250px);
+//     border: 1px solid black;
 
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+//     border-radius: 30px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: relative;
 
-    &:before {
-        content: '';
+//     &:before {
+//         content: '';
 
-        position: absolute;
-        background-color: aliceblue;
-        border: 0.5px solid black;
-        height: 30px;
-        width: 3px;
-        left: -3px;
-        top: 70px;
-    }
+//         position: absolute;
+//         background-color: aliceblue;
+//         border: 0.5px solid black;
+//         height: 30px;
+//         width: 3px;
+//         left: -3px;
+//         top: 70px;
+//     }
 
-    &:after {
-        content: '';
+//     &:after {
+//         content: '';
 
-        position: absolute;
-        background-color: aliceblue;
-        border: 0.5px solid black;
+//         position: absolute;
+//         background-color: aliceblue;
+//         border: 0.5px solid black;
 
-        height: 30px;
-        width: 3px;
-        left: -3px;
-        top: 130px;
-    }
+//         height: 30px;
+//         width: 3px;
+//         left: -3px;
+//         top: 130px;
+//     }
 
-    .screen {
+//     .screen {
 
-        background-image: url('./Screen\ Shot\ 2020-04-10\ at\ 18.28.51.png');
+//         background-image: url('./Screen\ Shot\ 2020-04-10\ at\ 18.28.51.png');
 
-        width: calc(250px - 20px);
-        height: calc((250px -20) * 0.83 + (250px -20) - 330px /2.6);
+//         width: calc(250px - 20px);
+//         height: calc((250px -20) * 0.83 + (250px -20) - 330px /2.6);
 
-        border-radius: 2px;
+//         border-radius: 2px;
 
-        // background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+//         // background-position: center;
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//     }
 
-    .buttom-top {
-        width: 10px;
-        height: 10px;
-        border-radius: 100%;
-        position: absolute;
-        top: 10px;
-        background-color: black;
-    }
+//     .buttom-top {
+//         width: 10px;
+//         height: 10px;
+//         border-radius: 100%;
+//         position: absolute;
+//         top: 10px;
+//         background-color: black;
+//     }
 
-    .logo {
-        width: calc(250px / 6);
-        height: 10px;
-        border-radius: 10px;
-        border: 1px solid black;
-        position: absolute;
-        top: calc(250px / 10);
-    }
+//     .logo {
+//         width: calc(250px / 6);
+//         height: 10px;
+//         border-radius: 10px;
+//         border: 1px solid black;
+//         position: absolute;
+//         top: calc(250px / 10);
+//     }
 
-    .buttom-bottom {
-        width: calc(250px / 10);
-        height: calc(250px / 10);
-        border-radius: 100%;
-        border: 1px solid black;
-        position: absolute;
-        bottom: calc(250px / 6/ 2);
-    }
-}
+//     .buttom-bottom {
+//         width: calc(250px / 10);
+//         height: calc(250px / 10);
+//         border-radius: 100%;
+//         border: 1px solid black;
+//         position: absolute;
+//         bottom: calc(250px / 6/ 2);
+//     }
+// }
 
-/* computer */
+// /* computer */
 
-.computer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+// .computer-container {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
 
-    .computer {
-        background-color: aliceblue;
+//     .computer {
+//         background-color: aliceblue;
 
-        height: 260px;
-        width: calc(260px * 0.83 + 260px);
+//         height: 260px;
+//         width: calc(260px * 0.83 + 260px);
 
-        border: 1px solid black;
-        border-radius: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
+//         border: 1px solid black;
+//         border-radius: 30px;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         position: relative;
 
-        .screen {
-            background-color: burlywood;
+//         .screen {
+//             background-color: burlywood;
 
-            border-radius: 5px;
+//             border-radius: 5px;
 
-            height: calc(260px - 40px);
-            width: calc((260px -40) * 0.83 + (260px -20) - 50px);
+//             height: calc(260px - 40px);
+//             width: calc((260px -40) * 0.83 + (260px -20) - 50px);
 
 
-            background-image: url('./Screen\ Shot\ 2020-05-06\ at\ 14.39.40.png');
+//             background-image: url('./Screen\ Shot\ 2020-05-06\ at\ 14.39.40.png');
 
-            background-repeat: no-repeat;
+//             background-repeat: no-repeat;
 
-            background-size: cover;
-        }
+//             background-size: cover;
+//         }
 
-        .buttom-top {
-            width: 8px;
-            height: 8px;
-            border-radius: 100%;
-            position: absolute;
-            top: 5px;
-            background-color: black;
-        }
+//         .buttom-top {
+//             width: 8px;
+//             height: 8px;
+//             border-radius: 100%;
+//             position: absolute;
+//             top: 5px;
+//             background-color: black;
+//         }
 
-    }
+//     }
 
-    .stand-computer {
-        margin-top: 10px;
-        background-color: aliceblue;
-        width: calc(260px / 2);
-        height: calc(260px / 6);
-        border-left: 1px solid black;
-        border-right: 1px solid black;
-        border-top: 1px solid black;
-    }
+//     .stand-computer {
+//         margin-top: 10px;
+//         background-color: aliceblue;
+//         width: calc(260px / 2);
+//         height: calc(260px / 6);
+//         border-left: 1px solid black;
+//         border-right: 1px solid black;
+//         border-top: 1px solid black;
+//     }
 
-    .footer-computer {
-        background-color: aliceblue;
-        width: calc(260px + 50px);
-        height: calc(260px / 15);
-        border: 1px solid black;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-}
+//     .footer-computer {
+//         background-color: aliceblue;
+//         width: calc(260px + 50px);
+//         height: calc(260px / 15);
+//         border: 1px solid black;
+//         border-top-left-radius: 10px;
+//         border-top-right-radius: 10px;
+//     }
+// }
+
+@import 'styles-mediaq.scss'

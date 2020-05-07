@@ -8,108 +8,1065 @@ body {
 .device {
   margin: 20px; }
 
-/* movil */
-.movil {
-  background-color: aliceblue;
-  width: 250px;
-  height: calc((250px * 0.83) + 250px);
-  border: 1px solid black;
-  border-radius: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative; }
-  .movil:before {
-    content: '';
-    position: absolute;
-    background-color: aliceblue;
-    border: 0.5px solid black;
-    height: 30px;
-    width: 3px;
-    left: -3px;
-    top: 70px; }
-  .movil:after {
-    content: '';
-    position: absolute;
-    background-color: aliceblue;
-    border: 0.5px solid black;
-    height: 30px;
-    width: 3px;
-    left: -3px;
-    top: 130px; }
-  .movil .screen {
-    background-image: url("./Screen Shot 2020-04-10 at 18.28.51.png");
-    width: calc(250px - 20px);
-    height: calc((250px -20) * 0.83 + (250px -20) - 330px /2.6);
-    border-radius: 2px;
-    background-repeat: no-repeat;
-    background-size: cover; }
-  .movil .buttom-top {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    position: absolute;
-    top: 10px;
-    background-color: black; }
-  .movil .logo {
-    width: calc(250px / 6);
-    height: 10px;
-    border-radius: 10px;
-    border: 1px solid black;
-    position: absolute;
-    top: calc(250px / 10); }
-  .movil .buttom-bottom {
-    width: calc(250px / 10);
-    height: calc(250px / 10);
-    border-radius: 100%;
-    border: 1px solid black;
-    position: absolute;
-    bottom: calc(250px / 6/ 2); }
+@media (min-width: 900px) {
+  /* computer */
+  .computer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .computer-container .computer {
+      background-color: aliceblue;
+      height: 280px;
+      width: calc(280px * 1.85);
+      border: 1px solid black;
+      border-radius: calc(280px / 15);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative; }
+      .computer-container .computer .screen {
+        background-color: burlywood;
+        border-radius: calc(280px / 100);
+        height: calc(280px - 280px / 8);
+        width: calc(280px * 1.65);
+        background-image: url("./Screen Shot 2020-05-06 at 14.39.40.png");
+        background-repeat: no-repeat;
+        background-size: cover; }
+      .computer-container .computer .buttom-top {
+        width: calc(280px / 42);
+        height: calc(280px / 42);
+        border-radius: 100%;
+        position: absolute;
+        top: 5px;
+        background-color: black; }
+    .computer-container .stand-computer {
+      margin-top: calc(280px / 20);
+      background-color: aliceblue;
+      width: calc(280px / 2);
+      height: calc(280px / 6);
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      border-top: 1px solid black; }
+    .computer-container .footer-computer {
+      background-color: aliceblue;
+      width: calc(280px * 1.5);
+      height: calc(280px / 15);
+      border: 1px solid black;
+      border-top-left-radius: calc(280px / 15);
+      border-top-right-radius: calc(280px / 15); }
 
-/* computer */
-.computer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .computer-container .computer {
+  /* movil */
+  .movil {
     background-color: aliceblue;
-    height: 260px;
-    width: calc(260px * 0.83 + 260px);
-    border: 1px solid black;
+    width: 280px;
+    height: calc(280px * 1.75);
     border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; }
-    .computer-container .computer .screen {
-      background-color: burlywood;
-      border-radius: 5px;
-      height: calc(260px - 40px);
-      width: calc((260px -40) * 0.83 + (260px -20) - 50px);
-      background-image: url("./Screen Shot 2020-05-06 at 14.39.40.png");
+    position: relative;
+    border: 1px solid black; }
+    .movil:before {
+      content: '';
+      position: absolute;
+      background-color: aliceblue;
+      border: 0.5px solid black;
+      height: calc(280px / 10);
+      width: calc(280px / 100);
+      left: calc(280px / -80);
+      top: calc(280px / 4); }
+    .movil:after {
+      content: '';
+      position: absolute;
+      background-color: aliceblue;
+      border: 0.5px solid black;
+      height: calc(280px / 10);
+      width: calc(280px / 100);
+      left: calc(280px / -80);
+      top: calc(280px / 2.7); }
+    .movil .screen {
+      width: calc(280px / 1.1);
+      height: calc(280px * 1.37);
+      border-radius: 2px;
+      position: absolute;
+      top: calc(280px / 6);
+      background-image: url("./Screen Shot 2020-04-10 at 18.28.51.png");
       background-repeat: no-repeat;
       background-size: cover; }
-    .computer-container .computer .buttom-top {
-      width: 8px;
-      height: 8px;
+    .movil .buttom-top {
+      width: calc(280px / 40);
+      height: calc(280px / 40);
       border-radius: 100%;
       position: absolute;
-      top: 5px;
+      top: calc(280px / 10 / 3);
       background-color: black; }
-  .computer-container .stand-computer {
-    margin-top: 10px;
+    .movil .logo {
+      width: calc(280px / 6);
+      height: calc(280px / 30);
+      border-radius: calc(280px / 30);
+      border: 1px solid black;
+      position: absolute;
+      top: calc(280px / 11); }
+    .movil .buttom-bottom {
+      width: calc(280px / 10);
+      height: calc(280px / 10);
+      border-radius: 100%;
+      border: 1px solid black;
+      position: absolute;
+      bottom: calc(280px / 15); } }
+@media (max-width: 900px) {
+  /* computer */
+  .computer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .computer-container .computer {
+      background-color: aliceblue;
+      height: 260px;
+      width: calc(260px * 1.85);
+      border: 1px solid black;
+      border-radius: calc(260px / 15);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative; }
+      .computer-container .computer .screen {
+        background-color: burlywood;
+        border-radius: calc(260px / 100);
+        height: calc(260px - 260px / 8);
+        width: calc(260px * 1.65);
+        background-image: url("./Screen Shot 2020-05-06 at 14.39.40.png");
+        background-repeat: no-repeat;
+        background-size: cover; }
+      .computer-container .computer .buttom-top {
+        width: calc(260px / 42);
+        height: calc(260px / 42);
+        border-radius: 100%;
+        position: absolute;
+        top: 5px;
+        background-color: black; }
+    .computer-container .stand-computer {
+      margin-top: calc(260px / 20);
+      background-color: aliceblue;
+      width: calc(260px / 2);
+      height: calc(260px / 6);
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      border-top: 1px solid black; }
+    .computer-container .footer-computer {
+      background-color: aliceblue;
+      width: calc(260px * 1.5);
+      height: calc(260px / 15);
+      border: 1px solid black;
+      border-top-left-radius: calc(260px / 15);
+      border-top-right-radius: calc(260px / 15); }
+
+  /* movil */
+  .movil {
     background-color: aliceblue;
-    width: calc(260px / 2);
-    height: calc(260px / 6);
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-top: 1px solid black; }
-  .computer-container .footer-computer {
+    width: 260px;
+    height: calc(260px * 1.75);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid black; }
+    .movil:before {
+      content: '';
+      position: absolute;
+      background-color: aliceblue;
+      border: 0.5px solid black;
+      height: calc(260px / 10);
+      width: calc(260px / 100);
+      left: calc(260px / -80);
+      top: calc(260px / 4); }
+    .movil:after {
+      content: '';
+      position: absolute;
+      background-color: aliceblue;
+      border: 0.5px solid black;
+      height: calc(260px / 10);
+      width: calc(260px / 100);
+      left: calc(260px / -80);
+      top: calc(260px / 2.7); }
+    .movil .screen {
+      width: calc(260px / 1.1);
+      height: calc(260px * 1.37);
+      border-radius: 2px;
+      position: absolute;
+      top: calc(260px / 6);
+      background-image: url("./Screen Shot 2020-04-10 at 18.28.51.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .movil .buttom-top {
+      width: calc(260px / 40);
+      height: calc(260px / 40);
+      border-radius: 100%;
+      position: absolute;
+      top: calc(260px / 10 / 3);
+      background-color: black; }
+    .movil .logo {
+      width: calc(260px / 6);
+      height: calc(260px / 30);
+      border-radius: calc(260px / 30);
+      border: 1px solid black;
+      position: absolute;
+      top: calc(260px / 11); }
+    .movil .buttom-bottom {
+      width: calc(260px / 10);
+      height: calc(260px / 10);
+      border-radius: 100%;
+      border: 1px solid black;
+      position: absolute;
+      bottom: calc(260px / 15); } }
+@media (max-width: 860px) {
+  /* computer */
+  .computer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .computer-container .computer {
+      background-color: aliceblue;
+      height: 250px;
+      width: calc(250px * 1.85);
+      border: 1px solid black;
+      border-radius: calc(250px / 15);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative; }
+      .computer-container .computer .screen {
+        background-color: burlywood;
+        border-radius: calc(250px / 100);
+        height: calc(250px - 250px / 8);
+        width: calc(250px * 1.65);
+        background-image: url("./Screen Shot 2020-05-06 at 14.39.40.png");
+        background-repeat: no-repeat;
+        background-size: cover; }
+      .computer-container .computer .buttom-top {
+        width: calc(250px / 42);
+        height: calc(250px / 42);
+        border-radius: 100%;
+        position: absolute;
+        top: 5px;
+        background-color: black; }
+    .computer-container .stand-computer {
+      margin-top: calc(250px / 20);
+      background-color: aliceblue;
+      width: calc(250px / 2);
+      height: calc(250px / 6);
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      border-top: 1px solid black; }
+    .computer-container .footer-computer {
+      background-color: aliceblue;
+      width: calc(250px * 1.5);
+      height: calc(250px / 15);
+      border: 1px solid black;
+      border-top-left-radius: calc(250px / 15);
+      border-top-right-radius: calc(250px / 15); }
+
+  /* movil */
+  .movil {
     background-color: aliceblue;
-    width: calc(260px + 50px);
-    height: calc(260px / 15);
-    border: 1px solid black;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px; }
+    width: 250px;
+    height: calc(250px * 1.75);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid black; }
+    .movil:before {
+      content: '';
+      position: absolute;
+      background-color: aliceblue;
+      border: 0.5px solid black;
+      height: calc(250px / 10);
+      width: calc(250px / 100);
+      left: calc(250px / -80);
+      top: calc(250px / 4); }
+    .movil:after {
+      content: '';
+      position: absolute;
+      background-color: aliceblue;
+      border: 0.5px solid black;
+      height: calc(250px / 10);
+      width: calc(250px / 100);
+      left: calc(250px / -80);
+      top: calc(250px / 2.7); }
+    .movil .screen {
+      width: calc(250px / 1.1);
+      height: calc(250px * 1.37);
+      border-radius: 2px;
+      position: absolute;
+      top: calc(250px / 6);
+      background-image: url("./Screen Shot 2020-04-10 at 18.28.51.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .movil .buttom-top {
+      width: calc(250px / 40);
+      height: calc(250px / 40);
+      border-radius: 100%;
+      position: absolute;
+      top: calc(250px / 10 / 3);
+      background-color: black; }
+    .movil .logo {
+      width: calc(250px / 6);
+      height: calc(250px / 30);
+      border-radius: calc(250px / 30);
+      border: 1px solid black;
+      position: absolute;
+      top: calc(250px / 11); }
+    .movil .buttom-bottom {
+      width: calc(250px / 10);
+      height: calc(250px / 10);
+      border-radius: 100%;
+      border: 1px solid black;
+      position: absolute;
+      bottom: calc(250px / 15); } }
+@media (max-width: 800px) {
+  /* computer */
+  .computer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .computer-container .computer {
+      background-color: aliceblue;
+      height: 240px;
+      width: calc(240px * 1.85);
+      border: 1px solid black;
+      border-radius: calc(240px / 15);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative; }
+      .computer-container .computer .screen {
+        background-color: burlywood;
+        border-radius: calc(240px / 100);
+        height: calc(240px - 240px / 8);
+        width: calc(240px * 1.65);
+        background-image: url("./Screen Shot 2020-05-06 at 14.39.40.png");
+        background-repeat: no-repeat;
+        background-size: cover; }
+      .computer-container .computer .buttom-top {
+        width: calc(240px / 42);
+        height: calc(240px / 42);
+        border-radius: 100%;
+        position: absolute;
+        top: 5px;
+        background-color: black; }
+    .computer-container .stand-computer {
+      margin-top: calc(240px / 20);
+      background-color: aliceblue;
+      width: calc(240px / 2);
+      height: calc(240px / 6);
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      border-top: 1px solid black; }
+    .computer-container .footer-computer {
+      background-color: aliceblue;
+      width: calc(240px * 1.5);
+      height: calc(240px / 15);
+      border: 1px solid black;
+      border-top-left-radius: calc(240px / 15);
+      border-top-right-radius: calc(240px / 15); }
+
+  /* movil */
+  .movil {
+    background-color: aliceblue;
+    width: 240px;
+    height: calc(240px * 1.75);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid black; }
+    .movil:before {
+      content: '';
+      position: absolute;
+      background-color: aliceblue;
+      border: 0.5px solid black;
+      height: calc(240px / 10);
+      width: calc(240px / 100);
+      left: calc(240px / -80);
+      top: calc(240px / 4); }
+    .movil:after {
+      content: '';
+      position: absolute;
+      background-color: aliceblue;
+      border: 0.5px solid black;
+      height: calc(240px / 10);
+      width: calc(240px / 100);
+      left: calc(240px / -80);
+      top: calc(240px / 2.7); }
+    .movil .screen {
+      width: calc(240px / 1.1);
+      height: calc(240px * 1.37);
+      border-radius: 2px;
+      position: absolute;
+      top: calc(240px / 6);
+      background-image: url("./Screen Shot 2020-04-10 at 18.28.51.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .movil .buttom-top {
+      width: calc(240px / 40);
+      height: calc(240px / 40);
+      border-radius: 100%;
+      position: absolute;
+      top: calc(240px / 10 / 3);
+      background-color: black; }
+    .movil .logo {
+      width: calc(240px / 6);
+      height: calc(240px / 30);
+      border-radius: calc(240px / 30);
+      border: 1px solid black;
+      position: absolute;
+      top: calc(240px / 11); }
+    .movil .buttom-bottom {
+      width: calc(240px / 10);
+      height: calc(240px / 10);
+      border-radius: 100%;
+      border: 1px solid black;
+      position: absolute;
+      bottom: calc(240px / 15); } }
+@media (max-width: 760px) {
+  /* computer */
+  .computer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .computer-container .computer {
+      background-color: aliceblue;
+      height: 300px;
+      width: calc(300px * 1.85);
+      border: 1px solid black;
+      border-radius: calc(300px / 15);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative; }
+      .computer-container .computer .screen {
+        background-color: burlywood;
+        border-radius: calc(300px / 100);
+        height: calc(300px - 300px / 8);
+        width: calc(300px * 1.65);
+        background-image: url("./Screen Shot 2020-05-06 at 14.39.40.png");
+        background-repeat: no-repeat;
+        background-size: cover; }
+      .computer-container .computer .buttom-top {
+        width: calc(300px / 42);
+        height: calc(300px / 42);
+        border-radius: 100%;
+        position: absolute;
+        top: 5px;
+        background-color: black; }
+    .computer-container .stand-computer {
+      margin-top: calc(300px / 20);
+      background-color: aliceblue;
+      width: calc(300px / 2);
+      height: calc(300px / 6);
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      border-top: 1px solid black; }
+    .computer-container .footer-computer {
+      background-color: aliceblue;
+      width: calc(300px * 1.5);
+      height: calc(300px / 15);
+      border: 1px solid black;
+      border-top-left-radius: calc(300px / 15);
+      border-top-right-radius: calc(300px / 15); }
+
+  /* movil */
+  .movil {
+    background-color: aliceblue;
+    width: 300px;
+    height: calc(300px * 1.75);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid black; }
+    .movil:before {
+      content: '';
+      position: absolute;
+      background-color: aliceblue;
+      border: 0.5px solid black;
+      height: calc(300px / 10);
+      width: calc(300px / 100);
+      left: calc(300px / -80);
+      top: calc(300px / 4); }
+    .movil:after {
+      content: '';
+      position: absolute;
+      background-color: aliceblue;
+      border: 0.5px solid black;
+      height: calc(300px / 10);
+      width: calc(300px / 100);
+      left: calc(300px / -80);
+      top: calc(300px / 2.7); }
+    .movil .screen {
+      width: calc(300px / 1.1);
+      height: calc(300px * 1.37);
+      border-radius: 2px;
+      position: absolute;
+      top: calc(300px / 6);
+      background-image: url("./Screen Shot 2020-04-10 at 18.28.51.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .movil .buttom-top {
+      width: calc(300px / 40);
+      height: calc(300px / 40);
+      border-radius: 100%;
+      position: absolute;
+      top: calc(300px / 10 / 3);
+      background-color: black; }
+    .movil .logo {
+      width: calc(300px / 6);
+      height: calc(300px / 30);
+      border-radius: calc(300px / 30);
+      border: 1px solid black;
+      position: absolute;
+      top: calc(300px / 11); }
+    .movil .buttom-bottom {
+      width: calc(300px / 10);
+      height: calc(300px / 10);
+      border-radius: 100%;
+      border: 1px solid black;
+      position: absolute;
+      bottom: calc(300px / 15); } }
+@media (max-width: 650px) {
+  /* computer */
+  .computer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .computer-container .computer {
+      background-color: aliceblue;
+      height: 250px;
+      width: calc(250px * 1.85);
+      border: 1px solid black;
+      border-radius: calc(250px / 15);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative; }
+      .computer-container .computer .screen {
+        background-color: burlywood;
+        border-radius: calc(250px / 100);
+        height: calc(250px - 250px / 8);
+        width: calc(250px * 1.65);
+        background-image: url("./Screen Shot 2020-05-06 at 14.39.40.png");
+        background-repeat: no-repeat;
+        background-size: cover; }
+      .computer-container .computer .buttom-top {
+        width: calc(250px / 42);
+        height: calc(250px / 42);
+        border-radius: 100%;
+        position: absolute;
+        top: 5px;
+        background-color: black; }
+    .computer-container .stand-computer {
+      margin-top: calc(250px / 20);
+      background-color: aliceblue;
+      width: calc(250px / 2);
+      height: calc(250px / 6);
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      border-top: 1px solid black; }
+    .computer-container .footer-computer {
+      background-color: aliceblue;
+      width: calc(250px * 1.5);
+      height: calc(250px / 15);
+      border: 1px solid black;
+      border-top-left-radius: calc(250px / 15);
+      border-top-right-radius: calc(250px / 15); }
+
+  /* movil */
+  .movil {
+    background-color: aliceblue;
+    width: 250px;
+    height: calc(250px * 1.75);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid black; }
+    .movil:before {
+      content: '';
+      position: absolute;
+      background-color: aliceblue;
+      border: 0.5px solid black;
+      height: calc(250px / 10);
+      width: calc(250px / 100);
+      left: calc(250px / -80);
+      top: calc(250px / 4); }
+    .movil:after {
+      content: '';
+      position: absolute;
+      background-color: aliceblue;
+      border: 0.5px solid black;
+      height: calc(250px / 10);
+      width: calc(250px / 100);
+      left: calc(250px / -80);
+      top: calc(250px / 2.7); }
+    .movil .screen {
+      width: calc(250px / 1.1);
+      height: calc(250px * 1.37);
+      border-radius: 2px;
+      position: absolute;
+      top: calc(250px / 6);
+      background-image: url("./Screen Shot 2020-04-10 at 18.28.51.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .movil .buttom-top {
+      width: calc(250px / 40);
+      height: calc(250px / 40);
+      border-radius: 100%;
+      position: absolute;
+      top: calc(250px / 10 / 3);
+      background-color: black; }
+    .movil .logo {
+      width: calc(250px / 6);
+      height: calc(250px / 30);
+      border-radius: calc(250px / 30);
+      border: 1px solid black;
+      position: absolute;
+      top: calc(250px / 11); }
+    .movil .buttom-bottom {
+      width: calc(250px / 10);
+      height: calc(250px / 10);
+      border-radius: 100%;
+      border: 1px solid black;
+      position: absolute;
+      bottom: calc(250px / 15); } }
+@media (max-width: 550px) {
+  /* computer */
+  .computer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .computer-container .computer {
+      background-color: aliceblue;
+      height: 190px;
+      width: calc(190px * 1.85);
+      border: 1px solid black;
+      border-radius: calc(190px / 15);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative; }
+      .computer-container .computer .screen {
+        background-color: burlywood;
+        border-radius: calc(190px / 100);
+        height: calc(190px - 190px / 8);
+        width: calc(190px * 1.65);
+        background-image: url("./Screen Shot 2020-05-06 at 14.39.40.png");
+        background-repeat: no-repeat;
+        background-size: cover; }
+      .computer-container .computer .buttom-top {
+        width: calc(190px / 42);
+        height: calc(190px / 42);
+        border-radius: 100%;
+        position: absolute;
+        top: 5px;
+        background-color: black; }
+    .computer-container .stand-computer {
+      margin-top: calc(190px / 20);
+      background-color: aliceblue;
+      width: calc(190px / 2);
+      height: calc(190px / 6);
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      border-top: 1px solid black; }
+    .computer-container .footer-computer {
+      background-color: aliceblue;
+      width: calc(190px * 1.5);
+      height: calc(190px / 15);
+      border: 1px solid black;
+      border-top-left-radius: calc(190px / 15);
+      border-top-right-radius: calc(190px / 15); }
+
+  /* movil */
+  .movil {
+    background-color: aliceblue;
+    width: 190px;
+    height: calc(190px * 1.75);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid black; }
+    .movil:before {
+      content: '';
+      position: absolute;
+      background-color: aliceblue;
+      border: 0.5px solid black;
+      height: calc(190px / 10);
+      width: calc(190px / 100);
+      left: calc(190px / -80);
+      top: calc(190px / 4); }
+    .movil:after {
+      content: '';
+      position: absolute;
+      background-color: aliceblue;
+      border: 0.5px solid black;
+      height: calc(190px / 10);
+      width: calc(190px / 100);
+      left: calc(190px / -80);
+      top: calc(190px / 2.7); }
+    .movil .screen {
+      width: calc(190px / 1.1);
+      height: calc(190px * 1.37);
+      border-radius: 2px;
+      position: absolute;
+      top: calc(190px / 6);
+      background-image: url("./Screen Shot 2020-04-10 at 18.28.51.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .movil .buttom-top {
+      width: calc(190px / 40);
+      height: calc(190px / 40);
+      border-radius: 100%;
+      position: absolute;
+      top: calc(190px / 10 / 3);
+      background-color: black; }
+    .movil .logo {
+      width: calc(190px / 6);
+      height: calc(190px / 30);
+      border-radius: calc(190px / 30);
+      border: 1px solid black;
+      position: absolute;
+      top: calc(190px / 11); }
+    .movil .buttom-bottom {
+      width: calc(190px / 10);
+      height: calc(190px / 10);
+      border-radius: 100%;
+      border: 1px solid black;
+      position: absolute;
+      bottom: calc(190px / 15); } }
+@media (max-width: 450px) {
+  /* computer */
+  .computer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .computer-container .computer {
+      background-color: aliceblue;
+      height: 170px;
+      width: calc(170px * 1.85);
+      border: 1px solid black;
+      border-radius: calc(170px / 15);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative; }
+      .computer-container .computer .screen {
+        background-color: burlywood;
+        border-radius: calc(170px / 100);
+        height: calc(170px - 170px / 8);
+        width: calc(170px * 1.65);
+        background-image: url("./Screen Shot 2020-05-06 at 14.39.40.png");
+        background-repeat: no-repeat;
+        background-size: cover; }
+      .computer-container .computer .buttom-top {
+        width: calc(170px / 42);
+        height: calc(170px / 42);
+        border-radius: 100%;
+        position: absolute;
+        top: 5px;
+        background-color: black; }
+    .computer-container .stand-computer {
+      margin-top: calc(170px / 20);
+      background-color: aliceblue;
+      width: calc(170px / 2);
+      height: calc(170px / 6);
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      border-top: 1px solid black; }
+    .computer-container .footer-computer {
+      background-color: aliceblue;
+      width: calc(170px * 1.5);
+      height: calc(170px / 15);
+      border: 1px solid black;
+      border-top-left-radius: calc(170px / 15);
+      border-top-right-radius: calc(170px / 15); }
+
+  /* movil */
+  .movil {
+    background-color: aliceblue;
+    width: 170px;
+    height: calc(170px * 1.75);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid black; }
+    .movil:before {
+      content: '';
+      position: absolute;
+      background-color: aliceblue;
+      border: 0.5px solid black;
+      height: calc(170px / 10);
+      width: calc(170px / 100);
+      left: calc(170px / -80);
+      top: calc(170px / 4); }
+    .movil:after {
+      content: '';
+      position: absolute;
+      background-color: aliceblue;
+      border: 0.5px solid black;
+      height: calc(170px / 10);
+      width: calc(170px / 100);
+      left: calc(170px / -80);
+      top: calc(170px / 2.7); }
+    .movil .screen {
+      width: calc(170px / 1.1);
+      height: calc(170px * 1.37);
+      border-radius: 2px;
+      position: absolute;
+      top: calc(170px / 6);
+      background-image: url("./Screen Shot 2020-04-10 at 18.28.51.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .movil .buttom-top {
+      width: calc(170px / 40);
+      height: calc(170px / 40);
+      border-radius: 100%;
+      position: absolute;
+      top: calc(170px / 10 / 3);
+      background-color: black; }
+    .movil .logo {
+      width: calc(170px / 6);
+      height: calc(170px / 30);
+      border-radius: calc(170px / 30);
+      border: 1px solid black;
+      position: absolute;
+      top: calc(170px / 11); }
+    .movil .buttom-bottom {
+      width: calc(170px / 10);
+      height: calc(170px / 10);
+      border-radius: 100%;
+      border: 1px solid black;
+      position: absolute;
+      bottom: calc(170px / 15); } }
+@media (max-width: 400px) {
+  /* computer */
+  .computer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .computer-container .computer {
+      background-color: aliceblue;
+      height: 150px;
+      width: calc(150px * 1.85);
+      border: 1px solid black;
+      border-radius: calc(150px / 15);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative; }
+      .computer-container .computer .screen {
+        background-color: burlywood;
+        border-radius: calc(150px / 100);
+        height: calc(150px - 150px / 8);
+        width: calc(150px * 1.65);
+        background-image: url("./Screen Shot 2020-05-06 at 14.39.40.png");
+        background-repeat: no-repeat;
+        background-size: cover; }
+      .computer-container .computer .buttom-top {
+        width: calc(150px / 42);
+        height: calc(150px / 42);
+        border-radius: 100%;
+        position: absolute;
+        top: 5px;
+        background-color: black; }
+    .computer-container .stand-computer {
+      margin-top: calc(150px / 20);
+      background-color: aliceblue;
+      width: calc(150px / 2);
+      height: calc(150px / 6);
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      border-top: 1px solid black; }
+    .computer-container .footer-computer {
+      background-color: aliceblue;
+      width: calc(150px * 1.5);
+      height: calc(150px / 15);
+      border: 1px solid black;
+      border-top-left-radius: calc(150px / 15);
+      border-top-right-radius: calc(150px / 15); }
+
+  /* movil */
+  .movil {
+    background-color: aliceblue;
+    width: 150px;
+    height: calc(150px * 1.75);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid black; }
+    .movil:before {
+      content: '';
+      position: absolute;
+      background-color: aliceblue;
+      border: 0.5px solid black;
+      height: calc(150px / 10);
+      width: calc(150px / 100);
+      left: calc(150px / -80);
+      top: calc(150px / 4); }
+    .movil:after {
+      content: '';
+      position: absolute;
+      background-color: aliceblue;
+      border: 0.5px solid black;
+      height: calc(150px / 10);
+      width: calc(150px / 100);
+      left: calc(150px / -80);
+      top: calc(150px / 2.7); }
+    .movil .screen {
+      width: calc(150px / 1.1);
+      height: calc(150px * 1.37);
+      border-radius: 2px;
+      position: absolute;
+      top: calc(150px / 6);
+      background-image: url("./Screen Shot 2020-04-10 at 18.28.51.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .movil .buttom-top {
+      width: calc(150px / 40);
+      height: calc(150px / 40);
+      border-radius: 100%;
+      position: absolute;
+      top: calc(150px / 10 / 3);
+      background-color: black; }
+    .movil .logo {
+      width: calc(150px / 6);
+      height: calc(150px / 30);
+      border-radius: calc(150px / 30);
+      border: 1px solid black;
+      position: absolute;
+      top: calc(150px / 11); }
+    .movil .buttom-bottom {
+      width: calc(150px / 10);
+      height: calc(150px / 10);
+      border-radius: 100%;
+      border: 1px solid black;
+      position: absolute;
+      bottom: calc(150px / 15); } }
+@media (max-width: 350px) {
+  /* computer */
+  .computer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .computer-container .computer {
+      background-color: aliceblue;
+      height: 120px;
+      width: calc(120px * 1.85);
+      border: 1px solid black;
+      border-radius: calc(120px / 15);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative; }
+      .computer-container .computer .screen {
+        background-color: burlywood;
+        border-radius: calc(120px / 100);
+        height: calc(120px - 120px / 8);
+        width: calc(120px * 1.65);
+        background-image: url("./Screen Shot 2020-05-06 at 14.39.40.png");
+        background-repeat: no-repeat;
+        background-size: cover; }
+      .computer-container .computer .buttom-top {
+        width: calc(120px / 42);
+        height: calc(120px / 42);
+        border-radius: 100%;
+        position: absolute;
+        top: 5px;
+        background-color: black; }
+    .computer-container .stand-computer {
+      margin-top: calc(120px / 20);
+      background-color: aliceblue;
+      width: calc(120px / 2);
+      height: calc(120px / 6);
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      border-top: 1px solid black; }
+    .computer-container .footer-computer {
+      background-color: aliceblue;
+      width: calc(120px * 1.5);
+      height: calc(120px / 15);
+      border: 1px solid black;
+      border-top-left-radius: calc(120px / 15);
+      border-top-right-radius: calc(120px / 15); }
+
+  /* movil */
+  .movil {
+    background-color: aliceblue;
+    width: 120px;
+    height: calc(120px * 1.75);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid black; }
+    .movil:before {
+      content: '';
+      position: absolute;
+      background-color: aliceblue;
+      border: 0.5px solid black;
+      height: calc(120px / 10);
+      width: calc(120px / 100);
+      left: calc(120px / -80);
+      top: calc(120px / 4); }
+    .movil:after {
+      content: '';
+      position: absolute;
+      background-color: aliceblue;
+      border: 0.5px solid black;
+      height: calc(120px / 10);
+      width: calc(120px / 100);
+      left: calc(120px / -80);
+      top: calc(120px / 2.7); }
+    .movil .screen {
+      width: calc(120px / 1.1);
+      height: calc(120px * 1.37);
+      border-radius: 2px;
+      position: absolute;
+      top: calc(120px / 6);
+      background-image: url("./Screen Shot 2020-04-10 at 18.28.51.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .movil .buttom-top {
+      width: calc(120px / 40);
+      height: calc(120px / 40);
+      border-radius: 100%;
+      position: absolute;
+      top: calc(120px / 10 / 3);
+      background-color: black; }
+    .movil .logo {
+      width: calc(120px / 6);
+      height: calc(120px / 30);
+      border-radius: calc(120px / 30);
+      border: 1px solid black;
+      position: absolute;
+      top: calc(120px / 11); }
+    .movil .buttom-bottom {
+      width: calc(120px / 10);
+      height: calc(120px / 10);
+      border-radius: 100%;
+      border: 1px solid black;
+      position: absolute;
+      bottom: calc(120px / 15); } }
 
 /*# sourceMappingURL=style.css.map */
